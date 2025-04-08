@@ -42,3 +42,7 @@ source ~/.local/share/blesh/ble.sh
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init bash)"
+
+if [ -x "$(command -v eza)" ]; then
+	alias ls="eza --icons --hyperlink --git"
+fi
