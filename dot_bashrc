@@ -46,3 +46,8 @@ eval "$(atuin init bash)"
 if [ -x "$(command -v eza)" ]; then
 	alias ls="eza --icons --hyperlink --git"
 fi
+
+if [ -x "$(command -v bat)" ]; then
+	export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
+	alias cat="bat"
+fi
