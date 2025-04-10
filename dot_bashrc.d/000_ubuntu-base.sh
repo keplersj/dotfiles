@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Don't do anything if we're not on Ubuntu
+# The grep is cheap and doesn't involve sourcing os-release into the environment
+if ! grep -q -i "ubuntu" /etc/os-release 2>/dev/null; then
+    return 0
+fi
+
 # This is pretty much a replication of the default Ubuntu .bashrc file.
 # This helps me get my Ubuntu machine migrated to chezmoi
 
