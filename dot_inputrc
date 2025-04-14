@@ -1,0 +1,11 @@
+#!/bin/bash
+# Configuration File for readline
+# This is primarilly for additional bash configuration
+# See man readline(3) for more
+
+set blink-matching-paren on
+set colored-completion on
+set colored-stats on
+set show-all-if-ambiguous on
+set visible-stats on
+set page-completions off
