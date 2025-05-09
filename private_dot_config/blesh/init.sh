@@ -8,6 +8,8 @@ if [ -x "$(command -v starship)" ]; then
   # Integrate starship with TransientPrompt
   # Ref: https://starship.rs/advanced-config/#transientprompt-and-transientrightprompt-in-bash
   bleopt prompt_ps1_final='$(starship module character)'
+  # Starship has the duraction module enabled out of the box, don't overlap
+  bleopt exec_elapsed_mark=''
 fi
 
 # Disable the exit output
