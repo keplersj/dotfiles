@@ -4,3 +4,6 @@
 disabled = false
 map_symbol = true
 format = '[$symbol$maybe_int]($style) '
+
+[sudo]
+disabled = false
