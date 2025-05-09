@@ -3,3 +3,4 @@
 [status]
 disabled = false
 map_symbol = true
+format = '[$symbol$maybe_int]($style) '
