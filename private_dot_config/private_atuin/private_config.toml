@@ -190,6 +190,7 @@ common_subcommands = [
   "helm",
   "ip",
   "kubectl",
+  "mc",
   "nix",
   "nmcli",
   "npm",
